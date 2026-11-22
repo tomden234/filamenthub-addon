@@ -28,6 +28,10 @@ Menü → Verbindungen → **FilamentHub Server**: Adresse des Pi eintragen (zum
 - **Warnung**, wenn ein Druck viel länger dauert als gewohnt, und **Spulen-Check** beim Start.
 - **Sicherung** jede Nacht (Spulen, Verlauf, Druckliste), 30 Tage, in der App herunterladbar.
 
+## Neu in 1.3.105 (Archiv 20 GB)
+
+Das Datei-Archiv fasst jetzt bis 20 GB und 2000 Dateien (vorher 2 GB und 400). Einzelne Dateien dürfen weiter bis 512 MB groß sein.
+
 ## Neu in 1.3.104 (ESP-Datei vom Update-Server)
 
 Die ESP-Datei `filament-ams.yaml` holt das Add-on jetzt von `https://filament.tdhub.de/updates/filament-ams.yaml` (die alte Adresse bei github.io gibt es nicht mehr). Das Add-on selbst kommt aus dem öffentlichen Repo `https://github.com/tomden234/filamenthub-addon`.
@@ -306,7 +310,7 @@ Der Server setzt Druckerwerte als Sensoren in Home Assistant (`sensor.filamenthu
 
 ## Neu in 1.3.30
 
-- **Datei-Archiv**: Der Pi sichert jede Datei aus der Warteschlange (Ordner `archive`, bis 2 GB / 400 Dateien). In der App: Menü „Datei-Archiv“ mit Suche, Sortierung, Material-Filter, Stern (wird nie gelöscht) und „Nochmal drucken“.
+- **Datei-Archiv**: Der Pi sichert jede Datei aus der Warteschlange (Ordner `archive`, bis 20 GB / 2000 Dateien). In der App: Menü „Datei-Archiv“ mit Suche, Sortierung, Material-Filter, Stern (wird nie gelöscht) und „Nochmal drucken“.
 
 ## Neu in 1.3.29
 
