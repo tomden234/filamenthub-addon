@@ -28,6 +28,10 @@ Menü → Verbindungen → **FilamentHub Server**: Adresse des Pi eintragen (zum
 - **Warnung**, wenn ein Druck viel länger dauert als gewohnt, und **Spulen-Check** beim Start.
 - **Sicherung** jede Nacht (Spulen, Verlauf, Druckliste), 30 Tage, in der App herunterladbar.
 
+## Neu in 1.3.106 (Kopplung per Code)
+
+Neue Geräte verbinden sich mit einem 8-stelligen Einmal-Code statt mit dem langen Schlüssel. Code erzeugen: auf dem Server `bash /opt/filamenthub/scripts/kopplungscode.sh` (oder in einer schon verbundenen App „Code für neues Gerät“). Der Code gilt 10 Minuten und einmal. Falsche Versuche werden begrenzt. Außerdem: Fehlt der Schlüssel ganz, zählt das nicht mehr als Fehlversuch (kein 429 mehr), und hinter Nginx wird die echte Absender-Adresse gezählt.
+
 ## Neu in 1.3.105 (Archiv 20 GB)
 
 Das Datei-Archiv fasst jetzt bis 20 GB und 2000 Dateien (vorher 2 GB und 400). Einzelne Dateien dürfen weiter bis 512 MB groß sein.
