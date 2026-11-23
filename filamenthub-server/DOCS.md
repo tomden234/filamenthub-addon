@@ -28,6 +28,10 @@ Menü → Verbindungen → **FilamentHub Server**: Adresse des Pi eintragen (zum
 - **Warnung**, wenn ein Druck viel länger dauert als gewohnt, und **Spulen-Check** beim Start.
 - **Sicherung** jede Nacht (Spulen, Verlauf, Druckliste), 30 Tage, in der App herunterladbar.
 
+## Neu in 1.3.108 (Server statt Pi)
+
+- Texte in der App und in Meldungen sagen „Server“ statt „Pi“. Hinweis bei fehlendem Bestell-Postfach nennt das Skript `mail-einrichten.sh`.
+
 ## Neu in 1.3.107 (Apps erlaubt)
 
 Die eigenen Apps (Handy, Windows-App) dürfen den Server von Haus aus ansprechen (CORS), ohne Extra-Einstellung. Der Zugriff bleibt durch den Schlüssel geschützt. Nötig für die Kopplung per Code.
