@@ -28,6 +28,10 @@ Menü → Verbindungen → **FilamentHub Server**: Adresse des Pi eintragen (zum
 - **Warnung**, wenn ein Druck viel länger dauert als gewohnt, und **Spulen-Check** beim Start.
 - **Sicherung** jede Nacht (Spulen, Verlauf, Druckliste), 30 Tage, in der App herunterladbar.
 
+## Neu in 1.3.107 (Apps erlaubt)
+
+Die eigenen Apps (Handy, Windows-App) dürfen den Server von Haus aus ansprechen (CORS), ohne Extra-Einstellung. Der Zugriff bleibt durch den Schlüssel geschützt. Nötig für die Kopplung per Code.
+
 ## Neu in 1.3.106 (Kopplung per Code)
 
 Neue Geräte verbinden sich mit einem 8-stelligen Einmal-Code statt mit dem langen Schlüssel. Code erzeugen: auf dem Server `bash /opt/filamenthub/scripts/kopplungscode.sh` (oder in einer schon verbundenen App „Code für neues Gerät“). Der Code gilt 10 Minuten und einmal. Falsche Versuche werden begrenzt. Außerdem: Fehlt der Schlüssel ganz, zählt das nicht mehr als Fehlversuch (kein 429 mehr), und hinter Nginx wird die echte Absender-Adresse gezählt.
