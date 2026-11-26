@@ -28,6 +28,10 @@ Menü → Verbindungen → **FilamentHub Server**: Adresse des Pi eintragen (zum
 - **Warnung**, wenn ein Druck viel länger dauert als gewohnt, und **Spulen-Check** beim Start.
 - **Sicherung** jede Nacht (Spulen, Verlauf, Druckliste), 30 Tage, in der App herunterladbar.
 
+## Neu in 1.3.116 (Bild auch bei Handstart)
+
+Bild und 3D-Modell des laufenden Drucks werden auch gefunden, wenn er von Hand gestartet wurde (Suche im Archiv über den Namen).
+
 ## Neu in 1.3.115 (Taster-Protokoll)
 
 Jeder Tastendruck und der Grund fürs Nicht-Starten stehen im Protokoll.
