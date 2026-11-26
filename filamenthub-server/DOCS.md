@@ -28,6 +28,30 @@ Menü → Verbindungen → **FilamentHub Server**: Adresse des Pi eintragen (zum
 - **Warnung**, wenn ein Druck viel länger dauert als gewohnt, und **Spulen-Check** beim Start.
 - **Sicherung** jede Nacht (Spulen, Verlauf, Druckliste), 30 Tage, in der App herunterladbar.
 
+## Neu in 1.3.115 (Taster-Protokoll)
+
+Jeder Tastendruck und der Grund fürs Nicht-Starten stehen im Protokoll.
+
+## Neu in 1.3.114 (Läuft gerade in 3D)
+
+Der Server liefert Bild und 3D-Modell des Drucks, der gerade läuft (nur Drucke aus der Warteschlange). Die App zeigt es in der Karte „Läuft gerade“.
+
+## Neu in 1.3.113 (Drucker-Zugang bleibt)
+
+IP, Zugangscode und Seriennummer des Druckers liegen jetzt im Datenordner statt im Code-Ordner. Ein Update löscht sie nicht mehr. Wer nach einem Update „Drucker nicht im LAN-Modus verbunden“ sah, trägt den Zugang einmal neu ein.
+
+## Neu in 1.3.112 (Leere Warteschlange bleibt dunkel)
+
+Ist die Warteschlange leer, leuchtet der Warteschlangen-Streifen nicht mehr orange, auch wenn die Platte noch nicht geräumt wurde. Orange „Platte räumen“ gibt es nur, wenn etwas wartet. Die neue ESP-Firmware (`filament-ams.yaml`) macht dasselbe direkt im Streifen.
+
+## Neu in 1.3.111 (Druckzeit-Statistik)
+
+Der Server merkt sich je Druck Name, Material, Soll-Dauer (Slicer oder Schätzung des Druckers) und Pausen. Die Zeit-Faktoren lernen jetzt aus allen fertigen Drucken, nicht nur aus der Warteschlange, und Pausen zählen nicht zur Dauer.
+
+## Neu in 1.3.109 (Gemini-Überlast abfangen)
+
+Bestell-Mails: Bei Gemini-Fehler 503 wartet der Server kurz, versucht es noch mal und nimmt dann ein anderes Modell. Eine Mail wird erst nach 8 Versuchen übersprungen.
+
 ## Neu in 1.3.108 (Server statt Pi)
 
 - Texte in der App und in Meldungen sagen „Server“ statt „Pi“. Hinweis bei fehlendem Bestell-Postfach nennt das Skript `mail-einrichten.sh`.
