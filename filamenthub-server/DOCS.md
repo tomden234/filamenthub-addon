@@ -28,6 +28,14 @@ Menü → Verbindungen → **FilamentHub Server**: Adresse des Pi eintragen (zum
 - **Warnung**, wenn ein Druck viel länger dauert als gewohnt, und **Spulen-Check** beim Start.
 - **Sicherung** jede Nacht (Spulen, Verlauf, Druckliste), 30 Tage, in der App herunterladbar.
 
+## Neu in 1.3.119 (Warteschlange rechnet Kosten)
+
+Platz ohne zugeordnete Spule: der Server nimmt die passende Spule (Material, Farbe), damit Gramm und Kosten der Warteschlange mitzählen.
+
+## Neu in 1.3.118 (Abzug findet Gewicht)
+
+Das Gewicht für den Abzug kommt jetzt auch aus der Archiv-Kopie der Druckdatei (Handstart, „Unbenannt“, Platten). Liegengebliebene Drucke der letzten 7 Tage werden einmal nachgeholt.
+
 ## Neu in 1.3.117 (LEDs zuverlässig)
 
 Die Status-LED am Drucker steuert der Server selbst (läuft nur, wenn die App-Automation „Status-LED“ nicht eingeschaltet ist). Die Warteschlangen-LED zeigt Grün sofort beim Tastendruck. Neue ESP-Datei 1.242: neu flashen.
