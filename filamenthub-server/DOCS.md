@@ -28,6 +28,10 @@ Menü → Verbindungen → **FilamentHub Server**: Adresse des Pi eintragen (zum
 - **Warnung**, wenn ein Druck viel länger dauert als gewohnt, und **Spulen-Check** beim Start.
 - **Sicherung** jede Nacht (Spulen, Verlauf, Druckliste), 30 Tage, in der App herunterladbar.
 
+## Neu in 1.3.122 (Düsenwechsel)
+
+Taster zweimal drücken, wenn nicht gedruckt wird: Der Kopf fährt nach vorn, beide Düsen gehen 2 Minuten auf 50 °C und danach aus. Wärmer lösen sich Düsen leichter. Beim Drucken passiert nichts.
+
 ## Neu in 1.3.121 (Abziehen von Hand repariert)
 
 „Jetzt abziehen“ klappt auch, wenn der Server die gewählte Spule noch nicht kennt. Dieselbe Spule in zwei Zeilen zählt zusammen.
