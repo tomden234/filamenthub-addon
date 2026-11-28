@@ -28,6 +28,10 @@ Menü → Verbindungen → **FilamentHub Server**: Adresse des Pi eintragen (zum
 - **Warnung**, wenn ein Druck viel länger dauert als gewohnt, und **Spulen-Check** beim Start.
 - **Sicherung** jede Nacht (Spulen, Verlauf, Druckliste), 30 Tage, in der App herunterladbar.
 
+## Neu in 1.3.120 (Nachholen ohne Push)
+
+Nachgeholte alte Drucke melden sich nicht mehr per Push.
+
 ## Neu in 1.3.119 (Warteschlange rechnet Kosten)
 
 Platz ohne zugeordnete Spule: der Server nimmt die passende Spule (Material, Farbe), damit Gramm und Kosten der Warteschlange mitzählen.
